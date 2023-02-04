@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+<!--    BoxIcon & FontAesome links for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container disabel">
+        <h2>Simples Editor de Imagens</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label for="" class="title">Filtros</label>
+                    <div class="options">
+                            <button id="brightness" class="active">Brilho</button>
+                        <button id="saturation">Saturação</button>
+                        <button id="inversion">Inversão</button>
+                        <button id="grayscale">Escala de cinza</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brilho</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" name="" id="" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label for="" class="title">Girar e Inverter</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="vertical"><i class="bx bx-reflect-vertical"></i></button>
+                        <button id="horizontal"><i class="bx bx-reflect-horizontal"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-img">
+                <img src="assets/image-placeholder.svg" alt="preview">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="reset-filter">Redefinir filtros</button>
+            <div class="row">
+                <input type="file" hidden  class="file-input" accept="image/*">
+                <button class="choose-img">Escolha a Imagem</button>
+                <button class="save-img">Salvar Imagem</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
